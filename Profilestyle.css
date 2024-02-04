@@ -1,0 +1,150 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; 
+    color: #333;
+}
+
+h1{
+    font-family: 'Segoe UI Variable Text Semibold', serif;
+}
+
+header, #about, #education, #projects, #skills, #contact, .navbar {
+    background-color: #000000;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #2d2d2d;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.navbar {
+    background-color: #343a40;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #009688;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #898989;
+    background-color: #ffffff;
+    padding: 5px;
+}
+
+section {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.hey {
+    color: #fcfcfc;
+}
+
+.hi{
+    color: #333;
+}
+
+.job {
+    margin-bottom: 20px;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-list li {
+    margin: 0 10px 10px 0;
+    padding: 10px 15px;
+    background-color: #dedede;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #343a40;
+    color: white;
+}
+
+
+#about {
+    background-color: #3e3e3e;
+    color: #ffffff;
+}
+
+#education1 {
+    background-color: #b0b0b0; 
+    color: rgb(0, 0, 0);
+}
+
+#education2 {
+    background-color: #3e3e3e; 
+    color: white;
+}
+
+#projects {
+    background-color: #b0b0b0; 
+}
+
+#skills {
+    background-color: #3e3e3e;
+    color: white; 
+}
+
+#contact {
+    background-color: #b0b0b0;
+    color: rgb(0, 0, 0);
+}
